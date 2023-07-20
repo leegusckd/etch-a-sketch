@@ -13,14 +13,20 @@
     <div class="flex-container">
         <div class="title"><h1>Etch-A-Sketch</h1></div>
 
-        <div class="grid"></div>
-        
         <div class="buttons">
+            <input type="color" class="colorPicker" value="black" />
             <button type="button" class="btn1">Color</button>
             <button type="button" class="btn2">Rainbow</button>
             <button type="button" class="btn3">Eraser</button>
-            <button type="button" class="btn4">Clear</button>
-            <button type="button" class="btn5">Grid Size: 16 x 16</button>      
+            <button type="button" class="btn4">Clear</button>     
+        </div>
+
+        <div class="grid"></div>
+
+        <div class="gridSize"> 
+            <label>Grid Size:</label>
+            <input type="range" min="1" max="64" class="slider" id="grid-size">
+            <span id ="gridSizeContent">16 x 16</span>
         </div>
 
     </div>
